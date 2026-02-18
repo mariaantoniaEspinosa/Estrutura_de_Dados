@@ -27,3 +27,5 @@ FERRAMENTAS:
 -Dev C++
 
 -JetBrain
+
+ObS: todo vetor é um ponteiro
