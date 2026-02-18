@@ -2,7 +2,7 @@
 ## Repositório destinado para as aulas de Estrutura de Dados
 ### Aula 01)
 
-Termos qu iremos utilizar nas próximas aulas:
+Termos que iremos utilizar nas próximas aulas:
 
 Listas -> Dicionário
 
