@@ -6,4 +6,4 @@ Introdução à disciplina e revisão dos conteúdos de Algoritmo A e B.
 
 ### Aula 02)
 
-Aprender a mexer no terminal e no VScode, converter código da aula 01 em c++ e c##
+
