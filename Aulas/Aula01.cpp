@@ -55,3 +55,4 @@ int main(){
     
     return 0;
 }
+// no terminal: Diabetes11 pois o nome do arquivo salvo na pasta é Diabetes1.1
