@@ -73,3 +73,77 @@ public class ExemploLista1 {
     }
 }
 ```
+## Exemplo em C++ do funcionamento de Lista
+```
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#define TAMANHO 10
+
+using namespace std;
+
+#include "utilidades.h"
+
+
+int main(){
+    string vetorNomes[TAMANHO]; 
+    inicializar(vetorNomes);
+    int totalNomesInseridos = 0;
+
+    totalNomesInseridos = inserir ("Davi", vetorNomes, totalNomesInseridos);
+    totalNomesInseridos = inserir ("Eduardo", vetorNomes, totalNomesInseridos);
+    totalNomesInseridos = inserir ("Gabriel", vetorNomes, totalNomesInseridos);
+
+    if(totalNomesInseridos>0){
+        exibir(vetorNomes);
+    } else{
+        cout << "Vetor de nomes vazio\n";
+    }
+   
+
+    //todo vetor é um ponteiro 
+
+    //CMD: cd downloads > cd Estrutura_de_Dados > dir > g++ .\exemploLista1.cpp -o roda > .\roda.exe
+
+
+    return 1;
+}
+```
+## Biblioteca utilidades.h do C++
+```
+#include <cstdlib>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void inicializar(string vetor[]){
+    for(int i =0; i< TAMANHO; i++){
+        vetor[i] = "branco";
+    }
+}
+
+
+int inserir(string nome, string vetor[], int total){
+    if(total == TAMANHO){
+        cout << "Vetor lotado\n";
+    } else {
+        for( int i = 0; i < TAMANHO; i++){
+            if(vetor[i] == "branco"){
+                vetor[i] = nome;
+                total ++;
+                break;
+            }
+        }
+    }
+    return total;
+}
+
+void exibir(string vetor[]){
+    for(int i =0; i < TAMANHO; i++){
+        if(vetor[i] != "branco"){
+             cout << vetor[i] << "\n";
+        }
+    }
+}
+```
