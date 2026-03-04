@@ -9,5 +9,8 @@
 - gcc Nome.c -o Nome (para compilar códigos em C)
 
 - g++ Nome.cpp -o Nome (para compilar códigos em C++)
-
+  
+- python Nome.py
+  
 - .\Nome (para executar)
+
