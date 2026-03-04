@@ -1,0 +1,14 @@
+### O que é Estrutura de Dados?
+- Disciplina ou área da Ciência da COmputação que estuda algoritmos para melhor gestão de meória
+- Estrututas de Dados Físicas
+  - Variáveis: dependetes das linguagens de programação
+    - int do java é diferente do int do C
+- Estruturas de Dados Abstratas
+  - algoritmos de gestão de memórias
+  - estruturas lineares: vetores - matriz de 1 dimensão
+    - pilhas (Stack): inserção, remoção, estaVazia, tamanho, localizar, topo...
+    - fila (Queue): inserção, remoção, estaVazia, localizar, primeiro, último...
+    - lista (List): inserção, remoção, estaVazia, localizar
+- estruturas não lineares: matrizes de N dimensões
+    - árvore (tree): inserção, remoção, estaVazia, localizar
+    - grafo: remoção, caminho, melhorCaminho
