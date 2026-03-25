@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Iterator;
 
 public class Estrutura{
 
@@ -54,7 +55,6 @@ public class Estrutura{
        for(Processo p : lista){
             if (p.descricao.contains(descricao)){
               System.out.println(p);
-              
             }
         }
     }
@@ -65,15 +65,24 @@ public class Estrutura{
         System.out.println("Digite palavra ou expressao que deseja excluir: ");
         descricao = teclado.nextLine().toUpperCase();
 
-        for(Processo p : lista){
+
+        Iterator<Processo> it = lista.iterator();
+        while (it.hasNext()) {
+            Processo p = it.next();
             if (p.descricao.contains(descricao)){
-                lista.remove(p);
-                //System.out.println(lista);
-                 for (Processo p2 : lista) {
-                    System.out.println(p2);
-                }
+                it.remove();
             }
         }
+
+       // for(Processo p : lista){
+        //    if (p.descricao.contains(descricao)){
+        //        lista.remove(p);
+        //        //System.out.println(lista);
+        //         for (Processo p2 : lista) {
+        //            System.out.println(p2);
+        //        }
+        //    }
+        //}
     }
 
     public static void main(String[ ] args){
@@ -86,6 +95,8 @@ public class Estrutura{
        Estrutura.localizarProcesso(lista);
 
        Estrutura.localizarParaExcluir(lista);
+       
+       Estrutura.exibirProcesso(lista);
 
        // cara entre <> é o tipo de lista que estamos armazenando, neste caso = processo
 
@@ -97,6 +108,9 @@ public class Estrutura{
     //    lista.add(new Processo(500,"teste de clock"));
     //    lista.add(new Processo(45,"fechamento de valvula"));
     //    lista.add(new Processo(1,"outro processo"));
+
+    }
+}
 
     }
 }
