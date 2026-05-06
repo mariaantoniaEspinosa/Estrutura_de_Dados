@@ -38,9 +38,7 @@ public class Recursao {
         }
 }
 ```
-
 ### Com recursão
-
 ```
 public class Recursao {
     
@@ -68,6 +66,13 @@ public class Recursao {
             }
         }
 
+        static void mostrarSequenciaCrescenteR(int numero){
+            if(numero>=0){
+                mostrarSequenciaCrescenteR(numero - 1);
+                System.out.println(numero);
+            }
+        }
+
 
         public static void main(String[] args) {
         int numero = 3;
@@ -76,6 +81,7 @@ public class Recursao {
         //mostrarSequenciaDecrescente(numero); //mostrar sequencia de numero até 0
 
         mostrarSequenciaDecrescenteR(numero);
+        mostrarSequenciaCrescenteR(numero);
 
         }
 }
