@@ -71,3 +71,9 @@ class Recusao {
     }
 }
 ```
+### Exercícios
+- Exercícios de fixação sobre o código base gerado. Faça métodos recurssivos que:
+1) receba uma list, seu tamanho, valor de pesquisa. Caso o valor de pesquisa ocorra na lista, retornar quantas vezes ele aparece.
+2) receba uma lista, seu tamanho, valor de pesquisa, valor de substituição. Caso o valor ocorra na lista, substituir o valor de pesquisa pelo valor de substituição
+3) receba uma lista, seu tamanho e retorne TRUE se a lista ordenada, FALSE se a lista desordenada.
+4) receba uma lista e seu tamano. O método deve exibir todos os número múltiplos de 4.
