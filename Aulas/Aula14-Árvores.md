@@ -10,8 +10,9 @@
 - percursão
   - LRED: pré-fixado; localizar dados ou pesquisa; - *if(arvore.contains(60)*
   - LERD: infixado; exibição; - *for(Integer i : arvore)*
-  - LEDR: pós-fixado; apagar árvore; - *arvore.clear* 
-## Exemplo
+  - LEDR: pós-fixado; apagar árvore; - *arvore.clear*
+    
+## Exemplo 01
 ```
 import java.util.TreeSet;
 
