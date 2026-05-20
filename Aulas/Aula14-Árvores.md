@@ -46,7 +46,7 @@ public class Arvore{
     }
 }
 ```
-### Exemplo 02
+## Exemplo 02
 ```
 import java.util.ArrayList;
 import java.util.TreeSet;
