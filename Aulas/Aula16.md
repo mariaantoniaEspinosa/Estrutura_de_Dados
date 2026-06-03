@@ -40,21 +40,71 @@
       - aresta simétrica
     - disco
     - RAM
+- Classe Grafo
 ```
-class Grafo{
- int matriz[][];
- int qtdVertices;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
-  public Grafo(int qtdVertices){
-     this.qtdVertices = qtdVertices;
-     this.matrizADJ = new int [qtdVertices][qtdVertices];
-     //inicializar matrizADj com zeros
-  }
+public class Grafo {
+    int matrizADJ[][];
+    int qtdVertices;
+    ArrayList<String> vertices;
 
-  void mostrarMatriz(){}
-  void mostrarGrafo(){}
-  void inserirAresta(int origem, int destino){}
-  void inserirArestaSimetrica(int origem, int destino){}
-  
+    /**
+     * Construtor
+     * @param qtdVertices para indicar a quantidade de linhas e colunas da Matriz 
+    */
+    public Grafo(ArrayList<String> vertices){
+        this.vertices = new ArrayList<>();
+        this.vertices.addAll(vertices);
+        this.qtdVertices = vertices.size();
+        this.matrizADJ = new int [this.qtdVertices][this.qtdVertices];
+
+        //inicializar com 0 a matriz que representa o grafo
+        for(int i = 0; i < qtdVertices; i++){
+            for(int j = 0; j < qtdVertices; j++){
+                this.matrizADJ[i][j] = 0;
+            }
+        }
+    }
+
+    /**
+     * Exibe a matrizADJ do grafo em formato de matriz
+     */
+    void mostrarMatriz(){
+        for(String v : this.vertices){
+            System.out.print("    " + v);
+        }
+        System.out.println();
+
+        for(int i = 0; i < qtdVertices; i++){   
+            System.out.print(this.vertices.get(i) + "   ");
+            for(int j = 0; j< qtdVertices; j++){
+                System.out.print(matrizADJ[i][j] + "    ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+```
+- Classe Principal
+```
+import java.util.ArrayList;
+
+public class Principal {
+    public static void main(String[] args) {
+        ArrayList<String> estacoes = new ArrayList<>();
+
+        //populando estacoes
+        estacoes.add("a");
+        estacoes.add("b");
+        estacoes.add("c");
+        estacoes.add("d");
+        estacoes.add("e");
+
+        Grafo gAssimetrico = new Grafo(estacoes);
+        gAssimetrico.mostrarMatriz();
+    }
 }
 ```
