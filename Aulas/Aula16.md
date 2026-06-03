@@ -1,0 +1,38 @@
+# Revisão
+- Estrutura de dados
+  - físicas: variáveis -> RAM
+  - abstratas: algoritmos + coleções
+    - lineares:
+      - lista (ordem)
+      - pilha (LIFO)
+      - fila (FIFO)
+      - -> add, remove, contains, size, empty, indexOP 
+    - não lineares:
+      - árvore: genéricas X binárias -> pesquisa/busca/ordenadas
+      - -> add, remove, contains, size, empty, **recursão**
+        
+# GRAFO
+- Estrutura de dados/coleção com foco em roteamento/percurso/caminhamento/track/route
+- Representar em geral mapas (rodoviário...equipamentos...aeroviário...ferroviário)
+- Relação de nó e seus adjacentes
+- lista -> pilha -> fila -> árvore -> grafo
+- Conceitos:
+  - nó ou nodo ou vértice
+    - V = {a, b, c, d, e}
+  - aresta ou arco (linha)
+    - A = {a,b; b,c; b,d; c,e; d,a; d,b; d,c; e,d}
+  - Grau/ramificação: quantas partidas e quantas chegadas tem um nó; arestas que chegam e partem
+    - grau 2: tem uma partida e uma chegada
+    - grau 3: duas partidas e uma chegada
+    - grau 5: três partidas e duas chegadas
+    - ...
+  - -> Grau total:
+  - -> Grau incidência = chegada
+  - -> Grau partida
+  - Simetria
+    - Simetrico: aresta sem seta indica que é simetrico e vai e volta 
+    - Assimétrico: digrafo
+  - Representação
+    - disco
+    - RAM
+  
