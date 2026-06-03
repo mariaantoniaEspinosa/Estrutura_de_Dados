@@ -26,9 +26,9 @@
     - grau 3: duas partidas e uma chegada
     - grau 5: três partidas e duas chegadas
     - ...
-  - -> Grau total:
-  - -> Grau incidência = chegada
-  - -> Grau partida
+    - -> Grau total:
+    - -> Grau incidência = chegada
+    - -> Grau partida
   - Simetria
     - Simetrico: aresta sem seta indica que é simetrico e vai e volta 
     - Assimétrico: digrafo
