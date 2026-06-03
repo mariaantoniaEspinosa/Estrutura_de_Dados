@@ -31,8 +31,13 @@
     - -> Grau partida
   - Simetria
     - Simetrico: aresta sem seta indica que é simetrico e vai e volta 
-    - Assimétrico: digrafo
+    - Assimétrico: digrafo -> tem seta
   - Representação
+    - matriz de adjacência
+      - quantidade de linhas = quantidade de vértices
+      - quantidade de colunas = quatidade de vértices
+      - aresta assimétrica
+      - aresta simétrica
     - disco
     - RAM
   
