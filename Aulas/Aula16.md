@@ -40,4 +40,21 @@
       - aresta simétrica
     - disco
     - RAM
+```
+class Grafo{
+ int matriz[][];
+ int qtdVertices;
+
+  public Grafo(int qtdVertices){
+     this.qtdVertices = qtdVertices;
+     this.matrizADJ = new int [qtdVertices][qtdVertices];
+     //inicializar matrizADj com zeros
+  }
+
+  void mostrarMatriz(){}
+  void mostrarGrafo(){}
+  void inserirAresta(int origem, int destino){}
+  void inserirArestaSimetrica(int origem, int destino){}
   
+}
+```
