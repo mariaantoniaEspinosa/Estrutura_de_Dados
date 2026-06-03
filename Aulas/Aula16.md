@@ -167,5 +167,14 @@ public class Principal {
     }
 }
 
-
 ```
+# Desafio
+- Ler arquivo csv, chamado mapa.csv do tipo:
+  - a, b
+  - b, c
+  - b, d
+  - d, a
+  - d, b
+  - d, c
+  - e, d
+- Extrair os vértices presentes no csv e adiciona-los na lista de vértices (lembrar de ordenar)
