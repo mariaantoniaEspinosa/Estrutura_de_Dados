@@ -9,7 +9,7 @@ public class Principal {
         estacoes.add("b");
         estacoes.add("c");
         estacoes.add("d");
-        estacoes.add("e");
+        estacoes.add("f");
 
         Grafo gAssimetrico = new Grafo(estacoes);
         //a, b
